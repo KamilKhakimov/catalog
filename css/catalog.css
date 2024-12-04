@@ -1,0 +1,66 @@
+.top {
+    padding-bottom: 126px;
+}
+.top.catalog-top {
+    background-image: url("../src/img/catalog-banner.jpg");
+}
+.menu-mob {
+    display: none;
+}
+.banner__title {
+    margin-top: 127px;
+    margin-bottom: 0;
+}
+.catalog__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+}
+.catalog__navigation-pag {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.catalog__navigation-pag a {
+    color: black;
+}
+.catalog__navigation-filtr__wrapper {
+    display: flex;
+    gap: 10px;
+}
+.catalog__navigation-filtr-each {
+    display: flex;
+    padding: 9px 23px;
+    align-items: center;
+    border: 1px solid rgba(196, 196, 196, 1);
+    gap: 12px;
+    border-radius: 20px;
+}
+.catalog__navigation-filtr-each img {
+    width: 20px;
+    height: 11px;
+}
+.card__img:hover ~ .icons-wrapper {
+    display: flex;
+}
+.card-img__wrapper {
+    position: relative;
+}
+.icons-wrapper {
+    display: none;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    /* display: flex; */
+    gap: 24px;
+}
+.icons-wrapper svg {
+    cursor: pointer;
+}
+.icon-heart:hover path {
+    fill: red;
+}
+.icon-basket:hover path {
+    fill: black;
+}

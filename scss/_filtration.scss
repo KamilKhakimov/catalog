@@ -1,0 +1,304 @@
+.catalog__navigation-filtr__wrapper {
+    position: relative;
+}
+
+.filtration-form {
+    position: absolute;
+    background-color: $colorWhite;
+    top: 50px;
+    left: -386px;
+    border: 1px solid $colorBlack;
+    padding: 48px 40px 0 48px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+
+    &__content-wrapper {
+        display: flex;
+        gap: 65px;
+        flex-direction: row;
+        gap: 32px 65px;
+        max-width: 540px;
+    }
+
+    &__btn {
+        border: 1px solid $colorBlack;
+        border-radius: 20px;
+        padding: 10px 46px;
+        line-height: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: $colorWhite;
+    }
+
+    &__legend {
+        color: rgb(5, 5, 5);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 14px;
+    }
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.radio {
+    display: flex;
+    gap: 14px;
+
+    &__input {
+        display: none;
+    }
+
+}
+
+.input__label {
+    padding: 0 24px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    user-select: none;
+}
+
+/* Псевдоэлемент для кастомной радиокнопки */
+.input__label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border: 1px solid #888888;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+}
+
+/* Изменяем цвет рамки радиокнопки при выборе */
+.radio__input:checked+.input__label::before {
+    border-color: #000;
+    background: url("../src/img/galka.svg") no-repeat 50% 50%;
+}
+
+.range {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    &__input {
+        width: 190px;
+        height: 10px;
+        overflow: hidden;
+        outline: none;
+    }
+}
+
+.range__input,
+.range__input::-webkit-slider-runnable-track,
+.range__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: none;
+}
+
+.range__input::-webkit-slider-runnable-track {
+    width: 200px;
+    height: 1px;
+    background: $colorBlack;
+}
+
+.range__input:nth-child(2)::-webkit-slider-runnable-track {
+    background: none;
+}
+
+.range__input::-webkit-slider-thumb {
+    position: relative;
+    height: 8px;
+    width: 8px;
+    margin-top: -4px;
+    background: $colorBlack;
+    border: 1px solid $colorBlack;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.range_input::-webkit-slider-thumb:active {
+    cursor: grabbing;
+}
+
+.range__input:nth-child(1)::-webkit-slider-thumb {
+    z-index: 2;
+}
+
+.range__slider {
+    font-size: 14px;
+    position: relative;
+    height: 20px;
+    width: 210px;
+    display: inline-block;
+    margin-top: -5px;
+}
+
+.range__slider input {
+    position: absolute;
+}
+
+.range__label {
+    font-size: 14px;
+}
+
+.color-option {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 190px;
+    gap: 14px;
+
+    &__checkbox {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        padding-left: 30px;
+        font-size: 14px;
+    }
+
+    &__label::before {
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #888888;
+        position: absolute;
+        left: 0;
+        background-color: $colorWhite;
+    }
+}
+
+.checkbox__input:checked+.checkbox__label::before {
+    background-image: url("../src/img/galka.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: $colorBlack;
+}
+
+
+.checkbox__label-black::before {
+    background-color: $colorBlack;
+    border-color: #888888;
+}
+
+.checkbox__label-grey::before {
+    background-color: rgba(115, 115, 115, 1);
+    border-color: $colorBlack;
+}
+
+.checkbox__input-black:checked+.checkbox__label-black::before {
+    background-image: url("../src/img/galk-white.svg");
+}
+
+.checkbox__label-red::before {
+    background-color: rgba(255, 0, 0, 1);
+    border-color: #888888;
+}
+
+.checkbox__label-orange::before {
+    background-color: rgba(255, 122, 65, 1);
+    border-color: #888888;
+}
+
+.checkbox__label-yellow::before {
+    background-color: rgba(242, 203, 1, 1);
+    border-color: #888888;
+}
+
+.checkbox__label-green::before {
+    background-color: rgba(0, 191, 42, 1);
+    border-color: #888888;
+}
+
+.checkbox__label-light-green::before {
+    background-color: rgba(28, 204, 151, 1);
+    border-color: #888888;
+}
+
+.checkbox__label-light-blue::before {
+    background-color: rgba(0, 159, 227, 1);
+    border-color: #888888;
+}
+
+.checkbox__label-blue::before {
+    background-color: rgba(0, 10, 248, 1);
+    border-color: #888888;
+}
+
+.checkbox__label-dark-purple::before {
+    background-color: rgba(103, 16, 214, 1);
+    border-color: #888888;
+}
+
+.checkbox__label-light-purple::before {
+    background-color: rgba(157, 13, 181, 1);
+    border-color: #888888;
+}
+
+.checkbox__label-light-pink::before {
+    background-color: rgba(216, 154, 255, 1);
+    border-color: #888888;
+}
+
+.checkbox__label-pink::before {
+    background-color: rgba(255, 101, 166, 1);
+    border-color: #888888;
+}
+
+.checkbox-rooms__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.filtration-form__content-wrapper--left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form-btm__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    margin-top: 36px;
+}
+
+.filtration-form__fieldset-pr {
+    margin-right: 36px;
+}
+
+.filtration-form.hidden {
+    display: none;
+}

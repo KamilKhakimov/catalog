@@ -1,0 +1,121 @@
+@media (max-width: 768px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top {
+        padding-bottom: 352px;
+    }
+    .header {
+        padding-top: 32px;
+        border-bottom: 0;
+    }
+    .header__search {
+        display: none;
+    }
+    .header .menu {
+        display: none;
+    }
+    .header__logo img {
+        width: 99px;
+    }
+    .menu-mob {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    .banner__title {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 59px;
+        text-align: center;
+        margin-top: 29px;
+    }
+    .banner__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+    }
+    .banner .banner__link {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        display: flex;
+        justify-content: center;
+    }
+    .furniture__title, .special__title, .catalog__title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .furniture__cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+    
+    .furniture__item {
+        height: 374px;
+    }
+    .furniture__item-big {
+        height: 243px;
+        grid-column: span 2;
+    }
+    .furniture__link {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34px;
+    }
+    .special-cards__wrapper {
+        justify-content: center;
+    }
+    .margin-top-for-block {
+        margin-top: 32px;
+    }
+    .card__img {
+        width: 100%;
+    }
+    .card__title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    .card__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+    .card__price {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    .catalog-cards__wrapper {
+        gap: 32px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer {
+        padding-bottom: 32px;
+    }
+    .footer__content-wrapper {
+        justify-content: center;
+        column-gap: 100px;
+        row-gap: 70px;
+        flex-wrap: wrap;
+    }
+    .footer__form {
+        width: 100%;
+    }
+    .footer__main-form {
+        margin: 0 auto
+    }
+}
+@media (max-width: 450px) {
+    .card {
+        /* width: 100%; */
+    }
+}
+
+

@@ -1,0 +1,28 @@
+@media (max-width: 1280px) {
+    .container {
+        padding: 0 24px;
+    }
+    .special-cards__wrapper {
+        justify-content: flex-start;
+        gap: 32px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .container {
+        padding-left: calc(50% - 768px/2);
+        padding-right: calc(50% - 768px/2);
+    }
+}
+@media (max-width: 1024px) {
+    .furniture__item {
+        height: 268px;
+    }
+
+    .card {
+        max-width: 368px;
+    }
+    .logo-footer {
+        display: none;
+    }
+}
