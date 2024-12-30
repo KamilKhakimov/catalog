@@ -98,6 +98,10 @@
         font-size: 24px;
         line-height: 29px;
     }
+
+    .catalog-banner {
+        margin-top: 81px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -157,7 +161,7 @@
     }
 
     .basket__btn {
-        gap: 12px;
+        row-gap: 14px;
     }
 
     .basket__btn button {
@@ -169,6 +173,7 @@
     .basket__btn button:nth-child(2) {
         background-color: $colorBlack;
         color: $colorWhite;
+        white-space: nowrap;
     }
 
     .special-cards__wrapper {
@@ -179,7 +184,7 @@
         grid-column: 1 / -1;
         padding-left: 27px;
         padding-right: 27px;
-        padding-bottom: 148px;
+        padding-bottom: 163px;
     }
 
     .basket-form__input {
@@ -195,6 +200,23 @@
 
     .filtration-form__content-wrapper {
         flex-wrap: wrap;
+    }
+
+    .basket__wrapper {
+        row-gap: 48px;
+    }
+
+    .basket__btn-continue {
+        // width: 163px;
+    }
+
+    .basket__btn-clear {
+        width: 166px;
+
+    }
+
+    .basket__btn {
+        justify-content: space-between;
     }
 }
 

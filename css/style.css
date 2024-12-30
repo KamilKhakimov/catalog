@@ -202,11 +202,11 @@ a {
 .catalog-cards__wrapper {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 56px;
+    row-gap: 48px;
     column-gap: 30px;
 }
 .catalog__more {
-    margin-top: 32px;
+    margin-top: 39px;
 }
 .catalog__more .catalog__link {
     color: rgb(0, 0, 0);
@@ -300,5 +300,24 @@ a {
     line-height: 18px;
     color: #000000;
 }
+.form__btn, 
+.filtration-form__btn,
+.basket__btn button,
+.basket-form__btn {
+    transition: all .5s ease-in-out;
+}
+.form__btn:hover,
+.filtration-form__btn:hover,
+.basket__btn button:hover,
+.basket-form__btn:hover {
+    background-color: black;
+    color: white;
+}
+.footer__messenders svg path{
+    transition: all .5s ease-in-out;
+}
 
+.footer__messenders svg:hover path{
+    fill: black;
+}
 /* footer */

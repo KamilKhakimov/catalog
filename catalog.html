@@ -71,7 +71,7 @@
                     </a>
                 </div>
             </header>
-            <section class="banner">
+            <section class="banner catalog-banner">
                 <h1 class="banner__title">Каталог</h1>
             </section>
         </div>
@@ -82,11 +82,11 @@
                 <ul class="catalog__navigation-pag">
                     <li><a href="./index.html">Главная</a></li>
                     <li>/</li>
-                    <li>Каталог каталог товаров</li>
+                    <li>Каталог товаров</li>
                 </ul>
                 <div class="catalog__navigation-filtr__wrapper">
                     <div class="catalog__navigation-filtr">
-                        <div class="catalog__navigation-filtr-each">
+                        <div class="catalog__navigation-filtr-each filt-btn">
                             <p>Фильтрация</p>
                             <img src="./src/img/arrow.png" alt="arrow">
                         </div>
@@ -283,7 +283,7 @@
                     </form>
 
                     <div class="catalog__navigation-filtr">
-                        <div class="catalog__navigation-filtr-each">
+                        <div class="catalog__navigation-filtr-each pop-btn">
                             <p>По популярности</p>
                             <img src="./src/img/arrow.png" alt="arrow">
                         </div>
@@ -431,9 +431,31 @@
                         <a href="tel:+79088008080" class="footer__link">+7 908 800 80 80</a>
                         <a href="mailto:help@interier.com" class="footer__link">help@interier.com</a>
                         <div class="footer__messenders-wrapper">
-                            <a class="footer__messenders" href="#"><img src="./src/img/vk.svg" alt="vk"></a>
-                            <a class="footer__messenders" href="#"><img src="./src/img/telegram.svg" alt="telegram"></a>
-                            <a class="footer__messenders" href="#"><img src="./src/img/dzen.svg" alt="dzen"></a>
+                            <a class="footer__messenders" href="#">
+                                <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z"
+                                        fill="#888888" />
+                                </svg>
+
+                            </a>
+                            <a class="footer__messenders" href="#">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.2957 0.363004L0.690684 7.57461C-0.0580144 7.91045 -0.311245 8.58298 0.509724 8.94798L5.28271 10.4727L16.8232 3.30353C17.4533 2.85347 18.0984 2.97348 17.5433 3.46858L7.63159 12.4893L7.32024 16.3069C7.60862 16.8964 8.13666 16.8991 8.47348 16.6061L11.2157 13.998L15.9122 17.533C17.003 18.1821 17.5965 17.7632 17.8312 16.5735L20.9117 1.91163C21.2315 0.447168 20.6861 -0.19809 19.2957 0.363004Z"
+                                        fill="#888888" />
+                                </svg>
+                            </a>
+                            <a class="footer__messenders" href="#">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.3326 10.7357C9.83979 12.195 9.73122 14.0143 9.60229 18C13.5244 18 16.2319 17.9871 17.6298 16.7014C18.9869 15.3771 19.0005 12.69 19.0005 9.09643C14.7934 9.225 12.873 9.32143 11.3326 10.7357ZM0.00050354 9.09643C0.00050354 12.69 0.014075 15.3771 1.37122 16.7014C2.76907 17.9871 5.47657 18 9.39872 18C9.263 14.0143 9.16122 12.195 7.66836 10.7357C6.128 9.32143 4.20765 9.21857 0.00050354 9.09643ZM9.39872 0C5.48336 0 2.76907 0.0128571 1.37122 1.29857C0.014075 2.62286 0.00050354 5.31 0.00050354 8.90357C4.20765 8.775 6.128 8.67857 7.66836 7.26429C9.16122 5.805 9.26979 3.98571 9.39872 0ZM11.3326 7.26429C9.83979 5.805 9.73122 3.98571 9.60229 0C13.5244 0 16.2319 0.0128571 17.6298 1.29857C18.9869 2.62286 19.0005 5.31 19.0005 8.90357C14.7934 8.775 12.873 8.67857 11.3326 7.26429Z"
+                                        fill="#888888" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
 
@@ -452,3 +474,9 @@
 </body>
 
 </html>
+
+<!-- git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/KamilKhakimov/catalog.git
+git push -u origin master -->
