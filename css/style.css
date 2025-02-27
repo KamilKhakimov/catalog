@@ -226,8 +226,21 @@ a {
 }
 .footer__content-wrapper {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
+
+.logo.logo-footer {
+    margin-right: 212px;
+}
+
+.footer__menu-wrapper {
+    margin-right: 129px;
+}
+
+.footer__contacts {
+    margin-right: 195px;
+}
+
 .footer__menu-wrapper {
     display: flex;
     flex-direction: column;

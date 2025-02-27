@@ -6,6 +6,15 @@
         justify-content: flex-start;
         gap: 32px;
     }
+    .logo.logo-footer,
+    .footer__menu-wrapper,
+    .footer__contacts {
+        margin-right: 0;
+    }
+
+    .footer__content-wrapper {
+        justify-content: space-between;
+    }
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {

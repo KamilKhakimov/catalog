@@ -227,7 +227,7 @@ a {
 .catalog-cards__wrapper {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 56px;
+  row-gap: 48px;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
@@ -254,7 +254,18 @@ a {
 
 .footer__content-wrapper {
   display: flex;
-  justify-content: space-between;
+}
+
+.logo.logo-footer {
+  margin-right: 212px;
+}
+
+.footer__menu-wrapper {
+  margin-right: 129px;
+}
+
+.footer__contacts {
+  margin-right: 195px;
 }
 
 .footer__menu-wrapper {
@@ -865,6 +876,14 @@ a {
   .special-cards__wrapper {
     justify-content: flex-start;
     gap: 32px;
+  }
+  .logo.logo-footer,
+  .footer__menu-wrapper,
+  .footer__contacts {
+    margin-right: 0;
+  }
+  .footer__content-wrapper {
+    justify-content: space-between;
   }
 }
 @media (min-width: 767px) and (max-width: 1024px) {
