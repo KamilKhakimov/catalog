@@ -181,7 +181,7 @@
     }
 
     .basket-form {
-        grid-column: 1 / -1;
+        // grid-column: 1 / -1;
         padding-left: 27px;
         padding-right: 27px;
         padding-bottom: 163px;
@@ -217,6 +217,14 @@
 
     .basket__btn {
         justify-content: space-between;
+    }
+
+
+}
+
+@media (max-width: 760px) {
+    .basket-form {
+        grid-column: 1 / -1;
     }
 }
 

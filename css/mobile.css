@@ -112,8 +112,4 @@
         margin: 0 auto
     }
 }
-@media (max-width: 450px) {
-    .card {
-        /* width: 100%; */
-    }
-}
+/* @media (max-width: 450px){} */

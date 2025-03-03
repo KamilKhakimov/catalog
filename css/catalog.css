@@ -3,6 +3,7 @@
 }
 .top.catalog-top {
     background-image: url("../src/img/catalog-banner.jpg");
+    height: 400px;
 }
 .menu-mob {
     display: none;
@@ -67,7 +68,7 @@
 
 /* Корреткирвоки */
 .pop-btn {
-    min-width: 227px;
+    /* min-width: 227px; */
 }
 .filt-btn {
     min-width: 182px;

@@ -355,11 +355,11 @@ a {
 /* footer */
 .top {
   background-image: url("../src/img/basket-banner.jpg");
-  padding-bottom: 110px;
+  padding-bottom: 108px;
 }
 
 .banner {
-  margin-top: 126px;
+  margin-top: 127px;
 }
 
 .basket__wrapper {
@@ -506,7 +506,7 @@ a {
   grid-column: span 4;
   border-radius: 20px;
   background: rgb(247, 246, 246);
-  padding: 42px 0;
+  padding: 42px 0 148px 0;
   text-align: center;
 }
 .basket-form__wrapper {
@@ -541,8 +541,8 @@ a {
   line-height: 17px;
 }
 .basket-form__price {
-  margin-top: 20px;
-  margin-bottom: 18px;
+  margin-top: 22px;
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
@@ -908,6 +908,9 @@ a {
   .logo-footer {
     display: none;
   }
+  .basket-form {
+    padding: 42px 0 148px 0;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1059,7 +1062,6 @@ a {
     justify-content: center;
   }
   .basket-form {
-    grid-column: 1/-1;
     padding-left: 27px;
     padding-right: 27px;
     padding-bottom: 163px;
@@ -1084,6 +1086,11 @@ a {
   }
   .basket__btn {
     justify-content: space-between;
+  }
+}
+@media (max-width: 760px) {
+  .basket-form {
+    grid-column: 1/-1;
   }
 }
 @media (max-width: 424px) {
